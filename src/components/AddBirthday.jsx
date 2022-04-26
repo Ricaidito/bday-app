@@ -18,23 +18,16 @@ const AddBirthday = () => {
   return (
     <section className="container">
       <h1>Add a birthday</h1>
-      <form
-        onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column" }}
-      >
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            placeholder="Type the name..."
-            ref={nameRef}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="birthday">Birthday:</label>
-          <input type="date" ref={birthdayRef} required />
-        </div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          placeholder="Type the name..."
+          ref={nameRef}
+          required
+        />
+        <label htmlFor="birthday">Birthday:</label>
+        <input type="date" ref={birthdayRef} required />
         <button>Add</button>
       </form>
     </section>
