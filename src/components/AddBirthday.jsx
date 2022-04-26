@@ -1,39 +1,40 @@
-import { useState } from "react";
+import { useRef } from "react";
 
 const AddBirthday = () => {
-  const [name, setName] = useState("");
-  const [birthday, setBirthday] = useState("");
+  const nameRef = useRef(null);
+  const birthdayRef = useRef(null);
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(name, birthday);
+    console.log(nameRef.current.value, birthdayRef.current.value);
     clearInputs();
   };
 
   const clearInputs = () => {
-    setName("");
-    setBirthday("");
+    nameRef.current.value = "";
+    birthdayRef.current.value = "";
   };
 
   return (
     <section className="container">
       <h1>Add a birthday</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          placeholder="Type the name..."
-          onChange={e => setName(e.target.value)}
-          value={name}
-          required
-        />
-        <label htmlFor="birthday">Birthday:</label>
-        <input
-          type="date"
-          onChange={e => setBirthday(e.target.value)}
-          value={birthday}
-          required
-        />
+      <form
+        onSubmit={handleSubmit}
+        style={{ display: "flex", flexDirection: "column" }}
+      >
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            placeholder="Type the name..."
+            ref={nameRef}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="birthday">Birthday:</label>
+          <input type="date" ref={birthdayRef} required />
+        </div>
         <button>Add</button>
       </form>
     </section>
