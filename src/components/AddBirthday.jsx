@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import '../styles/AddBirthday.css';
 
 const AddBirthday = () => {
   const nameRef = useRef(null);
