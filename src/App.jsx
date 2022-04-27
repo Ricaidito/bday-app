@@ -1,4 +1,5 @@
 import AddBirthday from "./components/AddBirthday";
+import BirthdayList from "./components/BirthdayList";
 import "./styles/App.css";
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <div>
       App component
       <AddBirthday />
+      <BirthdayList />
     </div>
   );
 }
