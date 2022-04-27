@@ -1,0 +1,13 @@
+.add-bd-form {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.add-bd-form > input {
+  width: 25%;
+}
+
+.add-bd-form > button {
+  width: 4em;
+}

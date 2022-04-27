@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "../styles/AddBirthday.css";
 
 const AddBirthday = () => {
   const nameRef = useRef(null);
@@ -17,18 +18,22 @@ const AddBirthday = () => {
 
   return (
     <section className="container">
-      <h1>Add a birthday</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          placeholder="Type the name..."
-          ref={nameRef}
-          required
-        />
-        <label htmlFor="birthday">Birthday:</label>
-        <input type="date" ref={birthdayRef} required />
-        <button>Add</button>
+      <h3>Add a birthday</h3>
+      <form className="add-bd-form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            placeholder="Type the name..."
+            ref={nameRef}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="birthday">Birthday:</label>
+          <input type="date" ref={birthdayRef} required />
+        </div>
+        <button className="">Add</button>
       </form>
     </section>
   );
