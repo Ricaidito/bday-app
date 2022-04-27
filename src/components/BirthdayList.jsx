@@ -12,10 +12,17 @@ const BirthdayList = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{UserBithday.BirthdayName}</td>
-            <td>{UserBithday.BirthdayDate}</td>
-          </tr>
+          {UserBithday.map((value, index) => {
+            if (value.UserId === 1) {
+              return (
+                <tr key={index}>
+                  <td>{value.BirthdayName}</td>
+                  <td>{value.BirthdayDate}</td>
+                </tr>
+              );
+            }
+            return null;
+          })}
         </tbody>
       </table>
     </div>

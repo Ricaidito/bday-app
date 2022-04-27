@@ -1,5 +1,27 @@
-{
-  "UserId": 1,
-  "BirthdayName": "Ricardo",
-  "BirthdayDate": "4-27"
-}
+[
+  {
+    "UserId": 1,
+    "BirthdayName": "Ricardo",
+    "BirthdayDate": "4-27"
+  },
+  {
+    "UserId": 2,
+    "BirthdayName": "Carlos",
+    "BirthdayDate": "08-08"
+  },
+  {
+    "UserId": 1,
+    "BirthdayName": "Reye",
+    "BirthdayDate": "12-25"
+  },
+  {
+    "UserId": 2,
+    "BirthdayName": "Luis",
+    "BirthdayDate": "4-06"
+  },
+  {
+    "UserId": 1,
+    "BirthdayName": "Test",
+    "BirthdayDate": "5-18"
+  }
+]
