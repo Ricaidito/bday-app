@@ -1,0 +1,24 @@
+.header{
+    
+    display: flex;
+    background-color: #5D8BF4;
+    font-size: large;
+    justify-content: space-between;
+    vertical-align:middle;
+    font-weight: 500;
+}
+
+.titulo{
+    padding: 10px;
+    margin: 0.7%;
+    text-align: left;
+    align-items: center;
+}
+
+.logout{
+    padding: 10px;
+    margin: 0.7%;
+    text-align: right;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
