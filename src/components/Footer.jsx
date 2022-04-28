@@ -5,11 +5,10 @@ const Footer = () => {
   return (
     <footer
       id="sticky-footer"
-      className="flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom"
+      className="d-flex flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom justify-content-around"
     >
-      <p className="text-center">
-        LeafSoft © Todos los derechos reservados | 2022
-      </p>
+      <p>Created by Ricardo Ramírez, Fernando Reyes & Carlos Collado</p>
+      <p>LeafSoft © all rights reserved | 2022</p>
     </footer>
   );
 };

@@ -1,28 +1,25 @@
+import BIRTHDAYS from "../mock/mockBirthdays";
 import "../styles/BirthdayList.css";
-import UserBithday from "../Mock/UserBirthdayMock.json";
 
 const BirthdayList = () => {
+  // TODO: Add the edit and delete buttons for each birthday
   return (
     <div className="container">
+      <h3>Your birthdays list</h3>
       <table className="table">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Date</th>
+            <th>Birthday date</th>
           </tr>
         </thead>
         <tbody>
-          {UserBithday.map((value, index) => {
-            if (value.UserId === 1) {
-              return (
-                <tr key={index}>
-                  <td>{value.BirthdayName}</td>
-                  <td>{value.BirthdayDate}</td>
-                </tr>
-              );
-            }
-            return null;
-          })}
+          {BIRTHDAYS.map(b => (
+            <tr key={b.id}>
+              <td>{b.name}</td>
+              <td>{b.date}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

@@ -1,7 +1,6 @@
 .add-bd-form {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .add-bd-form > input {
@@ -10,7 +9,4 @@
 
 .add-bd-form > button {
   width: 4em;
-}
-.container {
-  background-color: #2d31fa;
 }
