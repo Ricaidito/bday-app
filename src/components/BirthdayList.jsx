@@ -4,13 +4,13 @@ import "../styles/BirthdayList.css";
 const BirthdayList = () => {
   // TODO: Add the edit and delete buttons for each birthday
   return (
-    <div className="container">
-      <h3>Your birthdays list</h3>
+    <section className="container">
+      <h3>Your birthdays list 🪅</h3>
       <table className="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Birthday date</th>
+            <th>👤 Name</th>
+            <th>📅 Birthday date</th>
           </tr>
         </thead>
         <tbody>
@@ -22,7 +22,7 @@ const BirthdayList = () => {
           ))}
         </tbody>
       </table>
-    </div>
+    </section>
   );
 };
 

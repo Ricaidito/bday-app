@@ -18,7 +18,7 @@ const AddBirthday = () => {
 
   return (
     <section className="container">
-      <h3>Add a birthday</h3>
+      <h3>Add a birthday 🎈</h3>
       <form className="add-bd-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name: </label>
@@ -33,7 +33,7 @@ const AddBirthday = () => {
           <label htmlFor="birthday">Birthday: </label>
           <input type="date" ref={birthdayRef} required />
         </div>
-        <button className="">Add</button>
+        <button className="btn btn-success">Add</button>
       </form>
     </section>
   );
