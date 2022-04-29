@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import "./styles/App.css";
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <NavBar />
@@ -21,4 +21,6 @@ export default function App() {
       <Footer />
     </div>
   );
-}
+};
+
+export default App;
