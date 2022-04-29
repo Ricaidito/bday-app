@@ -5,7 +5,7 @@ const NavBar = () => {
     <div>
       <header className="header">
         <div className="titulo">Birthday Reminder</div>
-        <div className="logout">Logout</div>
+        <a className="logout" href="#">Logout</a>
       </header>
     </div>
   );
