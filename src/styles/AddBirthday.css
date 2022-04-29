@@ -1,3 +1,9 @@
+.container{
+  background-color: #2D31FA;
+
+  color: black;
+}
+
 .add-bd-form {
   display: flex;
   flex-direction: column;
