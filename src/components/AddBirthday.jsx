@@ -21,7 +21,7 @@ const AddBirthday = () => {
       <h3>Add a birthday</h3>
       <form className="add-bd-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name: </label>
           <input
             type="text"
             placeholder="Type the name..."
@@ -30,7 +30,7 @@ const AddBirthday = () => {
           />
         </div>
         <div>
-          <label htmlFor="birthday">Birthday:</label>
+          <label htmlFor="birthday">Birthday: </label>
           <input type="date" ref={birthdayRef} required />
         </div>
         <button className="">Add</button>

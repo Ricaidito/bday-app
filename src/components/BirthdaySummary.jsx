@@ -1,9 +1,25 @@
+
 const BirthdaySummary = () => {
-  return (
-    <div className="container">
-      <p>BirthdaySummary component!</p>
-    </div>
-  );
+
+  
+  const mock = [];
+
+  if (mock.length === 0){
+    return (
+      <div className="container">
+        <p>Today's birthday are</p>
+        <p>-</p>
+        <p>-</p>
+      </div>
+    );
+  }
+  else{
+    return(
+      <p>No female touched</p>
+    )
+    
+  }
+  
 };
 
 export default BirthdaySummary;
