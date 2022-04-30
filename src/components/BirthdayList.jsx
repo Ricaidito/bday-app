@@ -3,6 +3,7 @@ import "../styles/BirthdayList.css";
 
 const BirthdayList = () => {
   // TODO: Add the edit and delete buttons for each birthday
+  const birthdays = BIRTHDAYS;
   return (
     <section className="container">
       <h3>Your birthdays list 🪅</h3>
@@ -14,7 +15,7 @@ const BirthdayList = () => {
           </tr>
         </thead>
         <tbody>
-          {BIRTHDAYS.map(b => (
+          {birthdays.map(b => (
             <tr key={b.id}>
               <td>{b.name}</td>
               <td>{b.date}</td>
