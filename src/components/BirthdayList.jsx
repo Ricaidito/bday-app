@@ -11,6 +11,7 @@ const BirthdayList = () => {
           <tr>
             <th>Name</th>
             <th>Birthday date</th>
+            <th>Options</th>
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,8 @@ const BirthdayList = () => {
             <tr key={b.id}>
               <td>{b.name}</td>
               <td>{b.date}</td>
+              <td><button>Delete</button></td>
+              <td><button>Update</button></td>
             </tr>
           ))}
         </tbody>
