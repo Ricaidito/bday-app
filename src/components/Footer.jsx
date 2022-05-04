@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="sticky-footer"
-      className="d-flex flex-shrink-0 py-4 bg-dark text-white-50 fixed-bottom justify-content-around"
+      className="d-flex flex-shrink-0 py-4 bg-dark text-white-50 justify-content-around"
     >
       <p className="ft-text text-center">
         Created by Ricardo, Fernando & Carlos
