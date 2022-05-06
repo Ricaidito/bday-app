@@ -5,11 +5,7 @@ const AddBirthday = () => {
   const nameRef = useRef(null);
   const birthdayRef = useRef(null);
 
-  /**
-   * When the form is submitted, prevent the default action, split the birthday value into an array, and
-   * then log the name and date to the console.
-   */
-  const handleSubmit = e => {
+  const addBirthday = e => {
     e.preventDefault();
     const dateSplitted = birthdayRef.current.value.split("-");
     const date = `${dateSplitted[1]}-${dateSplitted[2]}`;
@@ -17,10 +13,6 @@ const AddBirthday = () => {
     clearInputs();
   };
 
-  /**
-   * Clear the inputs by setting the value of the current name and birthday references to an empty
-   * string.
-   */
   const clearInputs = () => {
     nameRef.current.value = "";
     birthdayRef.current.value = "";
@@ -29,7 +21,7 @@ const AddBirthday = () => {
   return (
     <section className="container">
       <h3>Add a birthday 🎈</h3>
-      <form className="add-bd-form" onSubmit={handleSubmit}>
+      <form className="add-bd-form" onSubmit={addBirthday}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
