@@ -15,3 +15,7 @@
 .add-bd-form > button {
   width: 4em;
 }
+
+.changeWidth{
+  width: 250px;
+}
