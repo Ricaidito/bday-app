@@ -57,7 +57,7 @@ const BirthdayList = () => {
         </div>
       ) : (
         <div>
-          <h2>No birthdays added...</h2>
+          <h4 className="pb-2">No birthdays added...</h4>
         </div>
       )}
     </section>

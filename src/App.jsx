@@ -12,7 +12,7 @@ const App = () => {
       <div className="container pt-4">
         <BirthdaySummary />
       </div>
-      <div className="container pt-4">
+      <div className="container pt-4 ">
         <AddBirthday />
       </div>
       <div className="container pt-4">

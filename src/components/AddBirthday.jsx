@@ -5,7 +5,7 @@ const AddBirthday = () => {
   const nameRef = useRef(null);
   const birthdayRef = useRef(null);
 
-  const addBirthday = (e) => {
+  const addBirthday = e => {
     e.preventDefault();
     const dateSplitted = birthdayRef.current.value.split("-");
     const date = `${dateSplitted[1]}-${dateSplitted[2]}`;
