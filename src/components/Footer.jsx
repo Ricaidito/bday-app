@@ -3,10 +3,7 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer
-      id="sticky-footer"
-      className="d-flex flex-shrink-0 py-4 bg-dark text-white-50 justify-content-around"
-    >
+    <footer className="d-flex flex-shrink-0 py-3 bg-dark text-white-50 justify-content-around fixed-bottom">
       <p className="ft-text text-center">
         Created by Ricardo, Fernando & Carlos
       </p>

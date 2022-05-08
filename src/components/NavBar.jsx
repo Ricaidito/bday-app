@@ -1,16 +1,17 @@
 import "../styles/NavBar.css";
 
 const NavBar = () => {
-  /*
-  Lo cambie a botón porque tiraba un warning y decía que usar un <a>
-  no era recomendable
-  */
+  const logout = () => {
+    alert("Logout!");
+  };
 
   return (
     <div>
-      <header className="header">
+      <header className="header fixed-top">
         <div className="titulo">Birthday Reminder 🎂</div>
-        <button className="logout btn btn-danger">Logout</button>
+        <button className="logout btn btn-danger" onClick={logout}>
+          Logout
+        </button>
       </header>
     </div>
   );

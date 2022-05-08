@@ -22,23 +22,17 @@ const AddBirthday = () => {
     <section className="container">
       <h3>Add a birthday 🎈</h3>
       <form className="add-bd-form" onSubmit={addBirthday}>
-        <div className="input-group mb-3 changeWidth">
-          <span className="input-group-text" id="basic-addon1">
-            Name
-          </span>
+        <div className="input-group mb-3 change-width">
+          <span className="input-group-text">Name</span>
           <input
             type="text"
             className="form-control"
             placeholder="Type the name..."
-            aria-label="Name"
-            aria-describedby="basic-addon1"
             required
           />
         </div>
-        <div className="input-group mb-3 changeWidth">
-          <span className="input-group-text" id="basic-addon1">
-            Birthday
-          </span>
+        <div className="input-group mb-3 change-width">
+          <span className="input-group-text">Birthday</span>
           <input
             type="date"
             className="form-control"

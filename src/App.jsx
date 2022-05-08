@@ -9,13 +9,13 @@ const App = () => {
   return (
     <div>
       <NavBar />
-      <div className="container pt-4">
+      <div className="container pt-1">
         <BirthdaySummary />
       </div>
-      <div className="container pt-4 ">
+      <div className="container pt-3">
         <AddBirthday />
       </div>
-      <div className="container pt-4">
+      <div className="container pt-3">
         <BirthdayList />
       </div>
       <Footer />
