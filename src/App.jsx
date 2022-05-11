@@ -1,14 +1,18 @@
-import AddBirthday from "./components/AddBirthday";
-import BirthdayList from "./components/BirthdayList";
-import BirthdaySummary from "./components/BirthdaySummary";
+// import AddBirthday from "./components/AddBirthday";
+// import BirthdayList from "./components/BirthdayList";
+// import BirthdaySummary from "./components/BirthdaySummary";
+// import NavBar from "./components/NavBar";
+import LoginForm from "./components/Login";
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
 import "./styles/App.css";
 
 const App = () => {
   return (
     <div>
-      <NavBar />
+      <div className="position-absolute top-50 start-50 translate-middle">
+        <LoginForm />
+      </div>
+      {/* <NavBar />
       <div className="container pt-1">
         <BirthdaySummary />
       </div>
@@ -17,7 +21,7 @@ const App = () => {
       </div>
       <div className="container pt-3">
         <BirthdayList />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
